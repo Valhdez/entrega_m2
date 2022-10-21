@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "modulo ii"
+name = "todos"
 version = "0.1.0"
-description = "Entrega del modulo 2"
-authors = ["Valeria Hdez"]
+description = "Entrega del modulo II. Creacion de un to_do list."
+authors = ["Valeria Hernandez"]
 license = "MIT"
 readme = "README.md"
 

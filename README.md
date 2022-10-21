@@ -7,7 +7,7 @@
 OS X & Linux & Windows:
 
 ```sh
-pip install 
+pip install dist\todos-0.1.0.tar.gz
 ```
 
 ## Usage example
@@ -23,9 +23,9 @@ python todos.py
 If you want to check te test
  
 ```sh
-One by One pythe
+One by One: pytest -Funcion-
 
-General
+General: tox -v
 ```
 
 ## Meta

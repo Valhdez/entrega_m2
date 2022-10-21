@@ -4,7 +4,7 @@ import pandas as pd
 import pytest
 import shutil
 from datetime import datetime
-sys.path.append(os.path.abspath(os.path.dirname(__file__)+'/../..'))
+sys.path.append( os.path.abspath(os.path.dirname(__file__)+'/../..') )
 from src import todos
 
 @pytest.fixture(scope="function")
@@ -48,19 +48,14 @@ dict_2 = {
         "owner": "@ValHdez",
     }
 
+def obtener_datos_test_add_task():
+    return [(True, dict_1), 
+            (False, dict_2)]
 
-def obtener_datos_test_integration():
-    return [(True, dict_1, 'list_v1', pd.DataFrame(columns=["created", "task", "summary", "status", "owner"])),
-            (False, dict_2, 'list_v2', pd.DataFrame(columns=["created", "task", "summary", "status", "owner"]))]
+@pytest.mark.parametrize('Bool, new', obtener_datos_test_add_task())
+def test_add_to_list(Bool, new, tmp_dir, df_full):
 
-@pytest.mark.parametrize('Bool, new_reg, name_ls, df', obtener_datos_test_integration())
-def test_add_to_list(Bool, new_reg, name_ls, df, df_full, tmp_dir):
-
-    todos.create_list(name_ls)
-    p_df = todos.load_list(name_ls)
-
-    todos.add_to_list(name_ls, new_reg)
-    s_df = todos.load_list(name_ls)
-
-    assert ((len(pd.concat([p_df, df], axis=1).columns.unique())==5) and 
-            (pd.concat([df_full,s_df],axis=0).drop_duplicates().shape[0]==1)) == Bool
+    todos.create_list("todos")
+    todos.add_to_list("todos", new)
+    df1 = todos.load_list("todos")
+    assert (pd.concat([df_full,df1],axis=0).drop_duplicates().shape[0]==1)==Bool

@@ -5,8 +5,7 @@ import pandas as pd
 from datetime import datetime
 from pathlib import Path
 
-#PATH_TO_DATA = "todos/data/"
-PATH_TO_DATA = "C:/Users/hdezv/OneDrive/Documentos/GitHub/entrega_m2/todos/data/"
+PATH_TO_DATA = "todos/data/"
 
 app = typer.Typer(add_completion=False)
 
