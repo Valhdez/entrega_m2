@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module todos</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>todos</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Chdezv%5Conedrive%5Cdocumentos%5Cgithub%5Centrega_m2%5Ctodos%5Csrc%5Ctodos.py">c:\users\hdezv\onedrive\documentos\github\entrega_m2\todos\src\todos.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="os.html">os</a><br>
+</td><td width="25%" valign=top><a href="pandas.html">pandas</a><br>
+</td><td width="25%" valign=top><a href="typer.html">typer</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-add_task"><strong>add_task</strong></a>(list_name: str = &lt;typer.models.OptionInfo object at 0x00000207E64040A0&gt;, task_name: str = &lt;typer.models.OptionInfo object at 0x00000207E64040D0&gt;, summary: str = &lt;typer.models.OptionInfo object at 0x00000207E6404100&gt;, owner: str = &lt;typer.models.OptionInfo object at 0x00000207E6404130&gt;)</dt><dd><tt>Add&nbsp;a&nbsp;task&nbsp;to&nbsp;a&nbsp;given&nbsp;todo&nbsp;list<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+list_name:&nbsp;str&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Default&nbsp;value&nbsp;=&nbsp;typer.Option(...)<br>
+"-ln"&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+"--listname")&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+task_name:&nbsp;str&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Default&nbsp;value&nbsp;=&nbsp;typer.Option(...)<br>
+"-tn"&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+"--taskame")&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+summary:&nbsp;str&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Default&nbsp;value&nbsp;=&nbsp;typer.Option(None)<br>
+"-d"&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+"--description")&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+owner:&nbsp;str&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Default&nbsp;value&nbsp;=&nbsp;typer.Option(...)<br>
+"-o"&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+"--owner")&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+Returns<br>
+-------</tt></dd></dl>
+ <dl><dt><a name="-add_to_list"><strong>add_to_list</strong></a>(list_name, new_row)</dt><dd><tt>Parameters<br>
+----------<br>
+list_name&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+new_row&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+Returns<br>
+-------</tt></dd></dl>
+ <dl><dt><a name="-check_list_exists"><strong>check_list_exists</strong></a>(name)</dt><dd><tt>check&nbsp;if&nbsp;the&nbsp;list&nbsp;was&nbsp;created<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+name&nbsp;:&nbsp;string<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+Returns<br>
+-------&nbsp;boolean</tt></dd></dl>
+ <dl><dt><a name="-create"><strong>create</strong></a>(name: str = &lt;typer.models.OptionInfo object at 0x00000207E63E9F70&gt;)</dt><dd><tt>Create&nbsp;a&nbsp;new&nbsp;todo&nbsp;list<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+name:&nbsp;str&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Default&nbsp;value&nbsp;=&nbsp;typer.Option("Unnamed")<br>
+"-ln"&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+"--listname")&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+Returns<br>
+-------&nbsp;"File_Name.csv"</tt></dd></dl>
+ <dl><dt><a name="-create_list"><strong>create_list</strong></a>(name)</dt><dd><tt>Add&nbsp;a&nbsp;new&nbsp;a&nbsp;new&nbsp;list<br>
+&nbsp;<br>
+Parameters<br>
+----------&nbsp;<br>
+name&nbsp;:&nbsp;String&nbsp;Name&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+Returns<br>
+-------&nbsp;Data&nbsp;Frame</tt></dd></dl>
+ <dl><dt><a name="-get_existing_lists"><strong>get_existing_lists</strong></a>()</dt><dd><tt>check&nbsp;if&nbsp;the&nbsp;list&nbsp;was&nbsp;exist<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+name&nbsp;:&nbsp;string<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+Returns<br>
+-------&nbsp;PATH_TO_DATA</tt></dd></dl>
+ <dl><dt><a name="-get_list_filename"><strong>get_list_filename</strong></a>(name)</dt><dd><tt>Get&nbsp;the&nbsp;name&nbsp;of&nbsp;file<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+name&nbsp;:<br>
+-------&nbsp;string&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+Returns<br>
+-------&nbsp;string</tt></dd></dl>
+ <dl><dt><a name="-get_list_path"><strong>get_list_path</strong></a>(name)</dt><dd><tt>Return&nbsp;te&nbsp;path&nbsp;of&nbsp;file&nbsp;were&nbsp;stored&nbsp;<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+name&nbsp;:&nbsp;str&nbsp;name&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+Returns<br>
+-------&nbsp;string</tt></dd></dl>
+ <dl><dt><a name="-list_lists"><strong>list_lists</strong></a>()</dt><dd><tt>List&nbsp;of&nbsp;the&nbsp;all&nbsp;list&nbsp;<br>
+Returns<br>
+-------&nbsp;list&nbsp;of&nbsp;files&nbsp;stored</tt></dd></dl>
+ <dl><dt><a name="-load_list"><strong>load_list</strong></a>(name)</dt><dd><tt>Load&nbsp;the&nbsp;File<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+name&nbsp;:&nbsp;string&nbsp;of&nbsp;name&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+Returns<br>
+-------&nbsp;DataFrame</tt></dd></dl>
+ <dl><dt><a name="-show_list"><strong>show_list</strong></a>(list_name: str = &lt;typer.models.OptionInfo object at 0x00000207E6404040&gt;)</dt><dd><tt>Shows&nbsp;Task&nbsp;in&nbsp;one&nbsp;list<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+list_name:&nbsp;str&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Default&nbsp;value&nbsp;=&nbsp;typer.Option(...)<br>
+"-ln"&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+"--listname")&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+Returns<br>
+-------&nbsp;get&nbsp;the&nbsp;list&nbsp;if&nbsp;the&nbsp;list&nbsp;exist,&nbsp;if&nbsp;not,&nbsp;get&nbsp;a&nbsp;string</tt></dd></dl>
+ <dl><dt><a name="-store_list"><strong>store_list</strong></a>(df, name)</dt><dd><tt>Save&nbsp;a&nbsp;new&nbsp;list<br>
+Parameters<br>
+----------<br>
+df&nbsp;:&nbsp;DataFrame<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+name&nbsp;:&nbsp;str&nbsp;name</tt></dd></dl>
+ <dl><dt><a name="-update_task"><strong>update_task</strong></a>(list_name: str = &lt;typer.models.OptionInfo object at 0x00000207E6404190&gt;, task_id: int = &lt;typer.models.OptionInfo object at 0x00000207E64041C0&gt;, field: str = &lt;typer.models.OptionInfo object at 0x00000207E64041F0&gt;, change: str = &lt;typer.models.OptionInfo object at 0x00000207E6404220&gt;)</dt><dd><tt>Update&nbsp;a&nbsp;task&nbsp;in&nbsp;a&nbsp;given&nbsp;todo&nbsp;list<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+list_name:&nbsp;str&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Default&nbsp;value&nbsp;=&nbsp;typer.Option(...)<br>
+"-ln"&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+"--listname")&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+task_id:&nbsp;int&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Default&nbsp;value&nbsp;=&nbsp;typer.Option(...)<br>
+"-i"&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+"--taskid")&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+field:&nbsp;str&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Default&nbsp;value&nbsp;=&nbsp;typer.Option(...)<br>
+"-f"&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+"--field")&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+change:&nbsp;str&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Default&nbsp;value&nbsp;=&nbsp;typer.Option(...)<br>
+"-c"&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+"--change")&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+Returns<br>
+-------</tt></dd></dl>
+ <dl><dt><a name="-update_task_in_list"><strong>update_task_in_list</strong></a>(list_name, task_id, field, change)</dt><dd><tt>Parameters<br>
+----------<br>
+list_name&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+task_id&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+field&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+change&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<br>
+Returns<br>
+-------</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>PATH</strong> = r'C:\Users\hdezv\OneDrive\Documentos\GitHub\entrega_m2\todos\src'<br>
+<strong>PATH_TO_DATA</strong> = 'C:/Users/hdezv/OneDrive/Documentos/GitHub/entrega_m2/todos/data/'<br>
+<strong>app</strong> = &lt;typer.main.Typer object&gt;</td></tr></table>
+</body></html>
